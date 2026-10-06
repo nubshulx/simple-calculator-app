@@ -2,7 +2,7 @@
 
 A tiny calculator built with plain HTML, CSS and JavaScript. Used to demo Git, GitHub and CI with GitHub Actions.
 
-## Run it
+## Run it. 
 
 Clone the repo and double-click `index.html`. No installs, no server.
 
@@ -27,11 +27,11 @@ Open `tests/tests.html`. It shows PASS/FAIL for each test.
 
 ## Project layout
 
-| File | Purpose |
-| --- | --- |
-| `index.html`, `style.css` | The UI |
-| `calculator.js` | Calculator logic (no DOM, so it is testable) |
-| `app.js` | Connects the buttons to the logic |
-| `tests/tests.js` | Unit tests, shared by browser and CI |
-| `tests/tests.html` | Runs the tests in a browser |
-| `.github/workflows/ci.yml` | The CI pipeline |
+| File                       | Purpose                                      |
+| -------------------------- | -------------------------------------------- |
+| `index.html`, `style.css`  | The UI                                       |
+| `calculator.js`            | Calculator logic (no DOM, so it is testable) |
+| `app.js`                   | Connects the buttons to the logic            |
+| `tests/tests.js`           | Unit tests, shared by browser and CI         |
+| `tests/tests.html`         | Runs the tests in a browser                  |
+| `.github/workflows/ci.yml` | The CI pipeline                              |
