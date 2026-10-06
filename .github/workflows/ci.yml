@@ -11,7 +11,7 @@ jobs:
     steps:
       # 1. Get the code
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # 2. Make sure the required files exist
       - name: Check required files
