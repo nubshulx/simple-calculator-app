@@ -3,6 +3,7 @@ name: CI
 # Runs on every push and on every pull request
 on:
   push:
+    branches: [main]
   pull_request:
 
 jobs:
