@@ -1,0 +1,26 @@
+name: CI
+
+# Runs on every push and on every pull request
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Get the code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Make sure the required files exist
+      - name: Check required files
+        run: |
+          for f in index.html style.css calculator.js app.js; do
+            test -f "$f" || { echo "Missing $f"; exit 1; }
+          done
+
+      # 3. Run the unit tests (Node is preinstalled on GitHub's runners;
+      #    nothing is installed on your own machine)
+      - name: Run unit tests
+        run: node tests/tests.js
