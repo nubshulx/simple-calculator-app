@@ -59,7 +59,7 @@ class Calculator {
   // Returns the result, or null for an invalid operation (e.g. divide by zero).
   static calculate(a, op, b) {
     switch (op) {
-      case "+": return a + b;
+      case "+": return a - b;
       case "-": return a - b;
       case "*": return a * b;
       case "/": return b === 0 ? null : a / b;
